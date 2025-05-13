@@ -1,8 +1,11 @@
 import express from 'express';  // Use ES Module import
 import connectDB from './config/db.js';
 import authRouter from './routes/authRoutes.js';
+import cors from 'cors';
 
 const app = express();
+
+app.use(cors());
 
 const PORT = 3000;
 
